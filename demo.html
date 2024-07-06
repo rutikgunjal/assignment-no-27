@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <button type="button" onclick="sayHi()">
+      on click
+    </button>
+     </br>     </br>     </br>
+
+    <button type="button" ondblclick="sayHello()">
+        click here
+      </button>
+    </br>     </br>     </br>
+
+      <img src="./photo.img" height="200px" 
+      onmouseover="over()"
+      onmousemove="move()"
+      onmouseout="out()"/>
+
+    </br>     </br>     </br>
+    <input type="text"
+    onkeypress="press()"
+    onkeydown="down()"
+    onkeyup="up()"/>
+
+</br>     </br>     </br>
+<input type="text" onchange="change()"/> 
+    <script>
+        //click
+        function sayHi(){
+            console.log(`######### HII ###########`);
+        }
+        //doubleclick
+        function sayHello()
+        {
+            console.log(`********** HELLO ***********`)
+        }
+        //1.mouseover   2.mousemove   3.mouseout
+        function over(){
+            console.log(`XXXXXXXXX`)
+        }
+        function move(){
+            console.log(`YYYYYYYYY`)
+        }
+        function out(){
+            console.log(`ZZZZZZZZ`)
+        }
+        //1.keypress  2. keydown   3.keyup
+
+        function down(){
+            console.log(`key is down`);
+        }
+        function press(){
+            console.log(`key is pressed`);
+        }
+        function up(){
+            console.log(`key is up`);
+        }
+        //change
+        function change(){
+            console.log(`changes is occured`);
+        } 
+        //load
+        function load(){
+            console.log(`page is loaded`);
+        }
+    </script>
+</body>
+</html>
